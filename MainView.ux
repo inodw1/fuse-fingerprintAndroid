@@ -1,0 +1,27 @@
+<App>
+
+        <JavaScript>
+            var Observable = require("FuseJS/Observable");
+            var Log = require("fingerAndroid");
+
+
+            function fingerPrintAuth() {
+                Log.fingerPrintAuth();
+            }
+
+            module.exports = {
+                fingerPrintAuth
+            };
+
+        </JavaScript>
+
+    <StackPanel Alignment="VerticalCenter" Margin="8" ItemSpacing="8">
+        <Panel Height="56" Width="160">
+            <Clicked Handler="{fingerPrintAuth}" />
+            <Text Value="Scan" Alignment="Center" Color="#fff" />
+            <Rectangle CornerRadius="2" Color="#18f" />
+        </Panel>
+    </StackPanel>
+
+</App>
+
